@@ -60,6 +60,16 @@ English / Chinese, toggle in the top-right corner of the app.
 
 ---
 
+## Disclaimer
+
+TorrentNext does not host, store, or distribute any torrent files or copyrighted content. It searches publicly accessible third-party sources and displays the results. The developer is not responsible for how those results are accessed or used.
+
+## License
+
+[![GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](LICENSE)
+
+This project is licensed under the GNU General Public License v3.0.
+
 ## Acknowledgments
 
-The 43 torrent parsers in this project are ported from [prajwalch/TorrentNext](https://github.com/prajwalch/TorrentNext) — an excellent open-source Android torrent search app. Thanks to the original author for the great work.
+The 43 torrent parsers in this project are ported from [prajwalch/TorrentSearch](https://github.com/prajwalch/TorrentSearch) — an excellent open-source Android torrent search app. Thanks to the original author for the great work.

@@ -60,6 +60,16 @@ docker compose up -d
 
 ---
 
+## 免责声明
+
+TorrentNext 不托管、存储或分发任何种子文件或受版权保护的内容。它仅搜索公开可访问的第三方来源并展示结果。开发者不对这些结果的使用方式负责。
+
+## 开源许可
+
+[![GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](LICENSE)
+
+本项目采用 GNU General Public License v3.0 开源许可证。
+
 ## 致谢
 
-本项目的 43 个种子解析器移植自 [prajwalch/TorrentNext](https://github.com/prajwalch/TorrentNext) —— 一个优秀的 Android 开源种子搜索应用。感谢原作者的出色工作。
+本项目的 43 个种子解析器移植自 [prajwalch/TorrentSearch](https://github.com/prajwalch/TorrentSearch) —— 一个优秀的 Android 开源种子搜索应用。感谢原作者的出色工作。
