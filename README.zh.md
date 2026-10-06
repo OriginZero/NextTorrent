@@ -24,6 +24,12 @@
 
 ## 快速开始
 
+### 在线体验地址
+
+体验地址：**[https://OriginZero.github.io/NextTorrent/](https://OriginZero.github.io/NextTorrent/)**
+
+> 页面通过 GitHub Actions 自动化静态导出并部署至 GitHub Pages。
+
 ### 开发模式
 
 ```bash
@@ -31,6 +37,15 @@ npm install
 npm run dev
 # http://localhost:3000
 ```
+
+### GitHub Actions 自动化部署 (GitHub Pages)
+
+本项目已配置 `.github/workflows/deploy.yml`。推送代码至 `main` 分支时将自动构建并发布到 GitHub Pages。
+
+**首次使用请在 GitHub 仓库中开启 Pages：**
+1. 进入 GitHub 仓库设置：`Settings` → `Pages`
+2. 将 `Build and deployment` 的 `Source` 设置为 **GitHub Actions**
+3. （可选）如需默认连接自定义外部后端，可在 `Settings` → `Secrets and variables` → `Actions` 中添加 Repository secret：`NEXT_PUBLIC_API_URL`（例如 `https://your-api.com`）
 
 ### Docker 部署
 

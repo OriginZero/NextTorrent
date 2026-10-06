@@ -5,6 +5,8 @@ import { SearchProvidersManager } from '@/lib/manager'
 const manager = new SearchProvidersManager()
 const gateway = new SearchProvidersGateway(manager)
 
+export const dynamic = 'force-static'
+
 export async function GET(req: NextRequest) {
   const url = req.nextUrl.searchParams.get('url')
   const provider = req.nextUrl.searchParams.get('provider')

@@ -6,6 +6,8 @@ import { Category } from '@/lib/types'
 const manager = new SearchProvidersManager()
 const gateway = new SearchProvidersGateway(manager)
 
+export const dynamic = 'force-static'
+
 export async function GET(req: NextRequest) {
   const category = (req.nextUrl.searchParams.get('category') as Category) || Category.All
   const torrents = await gateway.getTopTorrents(category)

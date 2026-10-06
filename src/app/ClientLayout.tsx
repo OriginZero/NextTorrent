@@ -1,6 +1,7 @@
 'use client'
 
 import { ReactNode } from 'react'
+import Link from 'next/link'
 import { I18nProvider, useI18n } from '@/lib/i18n/context'
 
 function LangSwitcher() {
@@ -17,7 +18,7 @@ export default function ClientLayout({ children }: { children: ReactNode }) {
   return (
     <I18nProvider>
       <header className="flex items-center justify-between px-4 py-2 border-b border-zinc-200 dark:border-zinc-800">
-        <a href="/" className="font-bold text-lg">TorrentNext</a>
+        <Link href="/" className="font-bold text-lg">TorrentNext</Link>
         <LangSwitcher />
       </header>
       <main className="flex flex-col flex-1">{children}</main>

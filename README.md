@@ -24,6 +24,12 @@ User → nginx:80 → Next.js (app):3000 → External torrent APIs/Pages
 
 ## Quick Start
 
+### Live Demo
+
+Demo URL: **[https://OriginZero.github.io/NextTorrent/](https://OriginZero.github.io/NextTorrent/)**
+
+> Statically exported and deployed to GitHub Pages via GitHub Actions.
+
 ### Development
 
 ```bash
@@ -31,6 +37,15 @@ npm install
 npm run dev
 # http://localhost:3000
 ```
+
+### GitHub Actions Deployment (GitHub Pages)
+
+Configured with `.github/workflows/deploy.yml`. Pushing to the `main` branch will automatically build and publish to GitHub Pages.
+
+**Enable GitHub Pages for the first time:**
+1. Navigate to repository `Settings` → `Pages`
+2. Under `Build and deployment` > `Source`, select **GitHub Actions**
+3. (Optional) To connect a custom external backend by default, add a Repository Secret under `Settings` → `Secrets and variables` → `Actions`: `NEXT_PUBLIC_API_URL` (e.g. `https://your-api.com`)
 
 ### Docker
 

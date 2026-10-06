@@ -6,6 +6,8 @@ import { Category } from '@/lib/types'
 const manager = new SearchProvidersManager()
 const gateway = new SearchProvidersGateway(manager)
 
+export const dynamic = 'force-static'
+
 export async function GET(req: NextRequest) {
   const q = req.nextUrl.searchParams.get('q')
   if (!q) return NextResponse.json({ error: 'Missing query parameter: q' }, { status: 400 })
